@@ -80,9 +80,10 @@ const buzzerOff = (req, res) => {
 }
 const readHumitemp = (req, res) => {
     console.log('readHumitemp()')
-    humitemp.read()
+    let result = humitemp.read()
     humitempstate = "#ffffff"
-    res.redirect('/')
+    return res.render(views/page' {data: result});
+    
 }
 const Lcd = (req, res) => {
     req.printMessage(first_name, last_name);

@@ -84,7 +84,7 @@ const readHumitemp = (req, res) => {
     humitempstate = "#ffffff"
     return res.render(views/page' {data: result});
     
-}
+},
 const Lcd = (req, res) => {
     req.printMessage(first_name, last_name);
     req.body.name
